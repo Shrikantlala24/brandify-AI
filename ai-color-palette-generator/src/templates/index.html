@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Color Palette Generator</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Color Palette Generator</h1>
+        <form id="paletteForm">
+            <div class="form-group">
+                <label for="emotion">Emotion/Mood:</label>
+                <input type="text" id="emotion" required placeholder="e.g., happy energetic, calm peaceful, professional serious">
+            </div>
+            <div class="form-group">
+                <label for="brief">Design Brief:</label>
+                <textarea id="brief" rows="3" required placeholder="e.g., modern and vibrant website design, tranquil meditation space"></textarea>
+            </div>
+            <button type="submit">Generate Palette</button>
+        </form>
+
+        <div class="loading">Generating palette...</div>
+        <div class="error"></div>
+
+        <div class="palette-container">
+            <h2>Generated Palette</h2>
+            <div class="color-palette" id="colorPalette"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('paletteForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const emotion = document.getElementById('emotion').value;
+            const brief = document.getElementById('brief').value;
+            const loading = document.querySelector('.loading');
+            const error = document.querySelector('.error');
+            const paletteContainer = document.querySelector('.palette-container');
+
+            loading.style.display = 'block';
+            error.style.display = 'none';
+            paletteContainer.style.display = 'none';
+
+            try {
+                const response = await fetch('/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ emotion, brief })
+                });
+
+                const data = await response.json();
+
+                if (data.status === 'success') {
+                    const colorPalette = document.getElementById('colorPalette');
+                    colorPalette.innerHTML = '';
+
+                    data.palette.forEach(color => {
+                        const colorBox = document.createElement('div');
+                        colorBox.className = 'color-box';
+                        colorBox.style.backgroundColor = color;
+
+                        const colorHex = document.createElement('div');
+                        colorHex.className = 'color-hex';
+                        colorHex.textContent = color.toUpperCase();
+
+                        colorBox.appendChild(colorHex);
+                        colorPalette.appendChild(colorBox);
+                    });
+
+                    paletteContainer.style.display = 'block';
+                } else {
+                    throw new Error(data.message);
+                }
+            } catch (err) {
+                error.textContent = 'Error: ' + err.message;
+                error.style.display = 'block';
+            } finally {
+                loading.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
