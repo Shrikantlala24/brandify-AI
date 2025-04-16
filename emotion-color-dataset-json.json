@@ -1,0 +1,209 @@
+{
+  "emotion_color_dataset": {
+    "primary_emotions": [
+      {
+        "emotion": "Joy/Happiness",
+        "colors": ["Yellow", "Orange"]
+      },
+      {
+        "emotion": "Sadness",
+        "colors": ["Blue", "Gray"]
+      },
+      {
+        "emotion": "Anger",
+        "colors": ["Red", "Crimson"]
+      },
+      {
+        "emotion": "Fear",
+        "colors": ["Purple", "Black"]
+      },
+      {
+        "emotion": "Disgust",
+        "colors": ["Green (olive or yellowish)"]
+      },
+      {
+        "emotion": "Surprise",
+        "colors": ["Bright Pink", "Electric Blue"]
+      },
+      {
+        "emotion": "Trust/Safety",
+        "colors": ["Sky Blue", "Turquoise"]
+      },
+      {
+        "emotion": "Anticipation",
+        "colors": ["Amber", "Orange"]
+      }
+    ],
+    "emotional_blends": [
+      {
+        "emotion": "Love",
+        "components": ["Joy", "Trust"],
+        "color_combination": "Red and Pink combination"
+      },
+      {
+        "emotion": "Optimism",
+        "components": ["Joy", "Anticipation"],
+        "color_combination": "Yellow and Orange gradient"
+      },
+      {
+        "emotion": "Hope",
+        "components": ["Anticipation", "Trust"],
+        "color_combination": "Light Blue with Gold accents"
+      },
+      {
+        "emotion": "Anxiety",
+        "components": ["Anticipation", "Fear"],
+        "color_combination": "Orange-Purple gradient"
+      },
+      {
+        "emotion": "Awe",
+        "components": ["Fear", "Surprise"],
+        "color_combination": "Deep Purple with Electric Blue highlights"
+      },
+      {
+        "emotion": "Disappointment",
+        "components": ["Surprise", "Sadness"],
+        "color_combination": "Gray with Pink undertones"
+      },
+      {
+        "emotion": "Remorse",
+        "components": ["Sadness", "Disgust"],
+        "color_combination": "Blue-Green mix, Teal"
+      },
+      {
+        "emotion": "Contempt",
+        "components": ["Anger", "Disgust"],
+        "color_combination": "Dark Red with Olive Green"
+      },
+      {
+        "emotion": "Aggression",
+        "components": ["Anger", "Anticipation"],
+        "color_combination": "Bright Red with Orange accents"
+      },
+      {
+        "emotion": "Submission",
+        "components": ["Trust", "Fear"],
+        "color_combination": "Pale Blue with Purple undertones"
+      },
+      {
+        "emotion": "Curiosity",
+        "components": ["Trust", "Surprise"],
+        "color_combination": "Turquoise with Pink highlights"
+      },
+      {
+        "emotion": "Sentimentality",
+        "components": ["Trust", "Sadness"],
+        "color_combination": "Powder Blue with Gray"
+      },
+      {
+        "emotion": "Shame",
+        "components": ["Fear", "Disgust"],
+        "color_combination": "Dark Purple with Green undertones"
+      },
+      {
+        "emotion": "Outrage",
+        "components": ["Surprise", "Anger"],
+        "color_combination": "Magenta with Red flashes"
+      }
+    ],
+    "complex_emotional_states": [
+      {
+        "emotion": "Nostalgia",
+        "components": ["Joy", "Sadness", "Trust"],
+        "color_combination": "Sepia tones, Warm Brown with Blue shadows"
+      },
+      {
+        "emotion": "Jealousy",
+        "components": ["Fear", "Anger", "Anticipation"],
+        "color_combination": "Green with Red and Purple accents"
+      },
+      {
+        "emotion": "Guilt",
+        "components": ["Fear", "Sadness", "Disgust"],
+        "color_combination": "Dark Gray with Green and Purple undertones"
+      },
+      {
+        "emotion": "Pride",
+        "components": ["Joy", "Anticipation", "Trust"],
+        "color_combination": "Gold with Yellow and Blue highlights"
+      },
+      {
+        "emotion": "Morbid Curiosity",
+        "components": ["Fear", "Disgust", "Surprise"],
+        "color_combination": "Dark Purple with Green and Pink accents"
+      },
+      {
+        "emotion": "Longing",
+        "components": ["Sadness", "Anticipation", "Trust"],
+        "color_combination": "Dusty Blue with Amber highlights"
+      },
+      {
+        "emotion": "Schadenfreude",
+        "components": ["Joy", "Anger"],
+        "color_combination": "Yellow with Red streaks"
+      },
+      {
+        "emotion": "Gratitude",
+        "components": ["Joy", "Trust", "Surprise"],
+        "color_combination": "Warm Gold with Sky Blue and Pink accents"
+      },
+      {
+        "emotion": "Ambivalence",
+        "components": ["Joy", "Sadness"],
+        "color_combination": "Yellow-Blue gradient, Teal with Yellow accents"
+      },
+      {
+        "emotion": "Forgiveness",
+        "components": ["Sadness", "Trust", "Joy"],
+        "color_combination": "Periwinkle Blue transitioning to Soft Yellow"
+      }
+    ],
+    "nuanced_emotional_gradients": [
+      {
+        "emotion": "Contentment",
+        "components": ["Mild Joy", "Trust"],
+        "color_combination": "Soft Yellow-Green, Pastel tones"
+      },
+      {
+        "emotion": "Melancholy",
+        "components": ["Mild Sadness", "Joy"],
+        "color_combination": "Lavender with Yellow undertones"
+      },
+      {
+        "emotion": "Bittersweet",
+        "components": ["Equal Joy", "Sadness"],
+        "color_combination": "Amber-Gray mix"
+      },
+      {
+        "emotion": "Apprehension",
+        "components": ["Mild Fear", "Anticipation"],
+        "color_combination": "Pale Purple with Orange accents"
+      },
+      {
+        "emotion": "Resignation",
+        "components": ["Sadness", "Acceptance"],
+        "color_combination": "Slate Gray with Blue undertones"
+      },
+      {
+        "emotion": "Determination",
+        "components": ["Mild Anger", "Anticipation", "Trust"],
+        "color_combination": "Burgundy with Orange and Blue accents"
+      },
+      {
+        "emotion": "Wonder",
+        "components": ["Joy", "Surprise", "Anticipation"],
+        "color_combination": "Iridescent Yellow-Pink-Blue"
+      },
+      {
+        "emotion": "Serenity",
+        "components": ["Joy", "Trust", "Low Arousal"],
+        "color_combination": "Pale Turquoise with White"
+      },
+      {
+        "emotion": "Acceptance",
+        "components": ["Neutral emotion"],
+        "color_combination": "White or Transparent"
+      }
+    ]
+  }
+}
